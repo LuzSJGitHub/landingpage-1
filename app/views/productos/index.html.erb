@@ -22,7 +22,7 @@
         <td><%= producto.categorium.nombre %></td>
         <td><%= link_to 'Mostrar', producto %></td>
         <td><%= link_to 'Editar', edit_producto_path(producto) %></td>
-        <td><%= link_to 'Eliminar', producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Eliminar', producto, method: :delete, data: { confirm: '¿Está seguro de eliminar?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,13 +30,17 @@
 
 <br>
 
-<%= link_to 'New Producto', new_producto_path %>
+<%= link_to 'Nuevo Producto', new_producto_path %>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function(){
-    $('#myTable').DataTable();
+    $('#myTable').DataTable({
+      language: {
+        url: "//cdn.datatables.net/plug-ins/1.11.3/i18n/es-cl.json"
+      }
+    });
   });
 </script>
