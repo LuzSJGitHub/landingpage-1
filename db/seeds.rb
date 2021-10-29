@@ -24,60 +24,72 @@ Producto.create([{
   nombre: "Blusas",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 2,
   categorium_id: Categorium.first.id
 }, {
   nombre: "Faldas",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 4,
   categorium_id: Categorium.where(nombre: "Ropa de Mujer").first.id
 }, {
   nombre: "Pantalón mujer",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 6,
   categorium_id: Categorium.where(nombre: "Ropa de Mujer").first.id
 }, {
   nombre: "Vestidos",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 8,
   categorium_id: Categorium.where(nombre: "Ropa de Mujer").first.id
 }, {
   nombre: "Camisas",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 10,
   categorium_id: Categorium.where(nombre: "Ropa de Hombre").first.id
 }, {
   nombre: "Pantalones",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 12,
   categorium_id: Categorium.where(nombre: "Ropa de Hombre").first.id
 }, {
   nombre: "Jumpers",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 14,
   categorium_id: Categorium.where(nombre: "Ropa de niños - uniformes de colegio").first.id
 }, {
   nombre: "Blusas niña",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 16,
   categorium_id: Categorium.where(nombre: "Ropa de niños - uniformes de colegio").first.id
 }, {
   nombre: "Camisas niño",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 18,
   categorium_id: Categorium.where(nombre: "Ropa de niños - uniformes de colegio").first.id
 }, {
   nombre: "Blusas corp",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 20,
   categorium_id: Categorium.where(nombre: "Uniformes corporativos").first.id
 }, {
   nombre: "Camisas corp",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 22,
   categorium_id: Categorium.where(nombre: "Uniformes corporativos").first.id
 }, {
   nombre: "Pantalones corp",
   descripcion: "Aquí una descripción",
   imagen: "https://... .jpg",
+  precio: 24,
   categorium_id: Categorium.where(nombre: "Uniformes corporativos").first.id
 }])
